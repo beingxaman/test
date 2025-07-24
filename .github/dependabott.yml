@@ -1,0 +1,26 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm" # For Node.js (change for your language: pip, maven, bundler, etc.)
+    directory: "/" # Location of your package.json/package-lock.json
+    schedule:
+      interval: "daily" # How often to check for updates (daily, weekly, monthly)
+    # Optional: Control PRs
+    open-pull-requests-limit: 10 # Limit the number of open PRs at once
+    # Optional: Labels for PRs
+    labels:
+      - "dependencies"
+      - "dependabot"
+    # Optional: Assignees/Reviewers
+    assignees:
+      - "your-github-username"
+    reviewers:
+      - "your-team-lead-username"
+    # Optional: Ignore specific dependencies or versions
+    # ignore:
+    #   - dependency-name: "express"
+    #     versions: ["4.x"]
+  - package-ecosystem: "github-actions" # To keep your GitHub Actions up-to-date
+    directory: "/"
+    schedule:
+      interval: "weekly"
