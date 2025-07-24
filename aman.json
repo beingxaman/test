@@ -1,0 +1,7 @@
+{
+  "name": "dependabot-test",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "4.0.0" # This version is known to have vulnerabilities
+  }
+}
