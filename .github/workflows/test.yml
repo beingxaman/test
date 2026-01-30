@@ -1,0 +1,14 @@
+name: Env Reflection Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: "<h1>environment"
+
+    steps:
+      - name: Print environment name
+        run: |
+          echo "Environment name: <h1>environment"
